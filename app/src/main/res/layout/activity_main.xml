@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Tela principal do sistema.
+    Responsável pelo cadastro de produtos e navegação entre funcionalidades.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ==========================
+             TÍTULO DA TELA
+        ========================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Produtos"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ==========================
+             FORMULÁRIO DE CADASTRO
+        ========================== -->
+
+        <!-- Nome do produto -->
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do produto"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Categoria -->
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Preço de compra -->
+        <EditText
+            android:id="@+id/editPrecoCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço de compra"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Preço de venda -->
+        <EditText
+            android:id="@+id/editPrecoVenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço de venda"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ==========================
+             AÇÕES DO USUÁRIO
+        ========================== -->
+
+        <!-- Botão salvar -->
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Produto"/>
+
+        <!-- Navegação para lista -->
+        <Button
+            android:id="@+id/botaoVerProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver produtos cadastrados"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Navegação para análise -->
+        <Button
+            android:id="@+id/botaoAnalise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Análise de Vendas"
+            android:layout_marginTop="10dp"/>
+
+        <!-- ==========================
+             LISTA DE PRODUTOS
+        ========================== -->
+
+
+
+    </LinearLayout>
+
+</ScrollView>

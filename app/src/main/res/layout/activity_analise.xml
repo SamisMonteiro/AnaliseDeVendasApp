@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Tela de análise de vendas.
+    Exibe resumo financeiro, categoria mais utilizada e ranking de produtos.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ==========================
+             TÍTULO
+        ========================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊 Dashboard de Vendas"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ==========================
+             FILTROS (OPCIONAL / FUTURO)
+        ========================== -->
+        <!-- Mantido para mostrar evolução futura do sistema -->
+        <Spinner
+            android:id="@+id/spinnerRelatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ==========================
+             BOTÃO GERAR RELATÓRIO
+        ========================== -->
+        <Button
+            android:id="@+id/botaoGerar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerar Análise"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ==========================
+             RESUMO PRINCIPAL
+        ========================== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resumo Geral"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Lucro total -->
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucro total: R$ 0,00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Linha separadora -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- ==========================
+             ANÁLISE DE CATEGORIA
+        ========================== -->
+        <TextView
+            android:id="@+id/textCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria mais utilizada: -"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- ==========================
+             RANKING DE PRODUTOS
+        ========================== -->
+        <TextView
+            android:id="@+id/textRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ranking de produtos aparecerá aqui"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ==========================
+             ÁREA DO GRÁFICO (PRÓXIMO PASSO)
+        ========================== -->
+        <!-- Aqui futuramente será exibido gráfico de pizza -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gráfico (em desenvolvimento)"
+            android:textStyle="italic"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ==========================
+             BOTÃO VOLTAR
+        ========================== -->
+        <Button
+            android:id="@+id/botaoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Voltar"/>
+
+    </LinearLayout>
+
+</ScrollView>

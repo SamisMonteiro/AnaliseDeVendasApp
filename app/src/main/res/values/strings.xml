@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AnaliseDeVendasApp</string>
+    <string-array name="categorias">
+        <item>Utensílios domésticos</item>
+        <item>Limpeza</item>
+        <item>Variedades</item>
+        <item>Comida</item>
+        <item>Cosméticos</item>
+    </string-array>
+
+</resources>

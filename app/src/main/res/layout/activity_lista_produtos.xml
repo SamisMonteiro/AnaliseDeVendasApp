@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+        Tela responsável por exibir todos os produtos cadastrados.
+        Permite visualização geral e navegação de retorno.
+    -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ==========================
+         TÍTULO DA TELA
+    ========================== -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📦 Produtos Cadastrados"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ==========================
+         LISTA DE PRODUTOS
+    ========================== -->
+    <!-- A lista ocupa todo o espaço disponível da tela -->
+    <ListView
+        android:id="@+id/listaProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="6dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- ==========================
+         BOTÃO DE VOLTAR
+    ========================== -->
+    <!-- Mantido fixo na parte inferior para facilitar navegação -->
+    <Button
+        android:id="@+id/botaoVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Voltar"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
